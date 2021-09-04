@@ -1,0 +1,122 @@
+Arguments: 
+  /usr/local/Cellar/node/16.1.0/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/trendlab-1/.cargo/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  16.1.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "substrate-front-end-template",
+    "version": "0.1.1",
+    "private": true,
+    "author": "Parity Technologies <admin@parity.io>",
+    "license": "Unlicense",
+    "scripts": {
+      "start": "react-app-rewired start",
+      "build": "react-app-rewired build",
+      "test": "CI=true react-app-rewired test --env=jsdom",
+      "eject": "react-app-rewired eject",
+      "lint": "eslint src/**/*.js",
+      "lint:ci": "eslint src/**/*.js --max-warnings=0",
+      "lint:fix": "eslint --fix src/**/*.js",
+      "deploy": "gh-pages -d build -m '[ci skip] Updates'"
+    },
+    "dependencies": {
+      "@polkadot/api": "^5.3.2",
+      "@polkadot/extension-dapp": "^0.39.1",
+      "@polkadot/keyring": "^7.1.1",
+      "@polkadot/types": "^5.3.2",
+      "@polkadot/ui-keyring": "^0.84.3",
+      "@polkadot/ui-settings": "^0.84.3",
+      "@polkadot/util": "^7.1.1",
+      "@polkadot/util-crypto": "^7.1.1",
+      "prop-types": "^15.7.2",
+      "query-string": "^6.13.5",
+      "react": "^16.14.0",
+      "react-copy-to-clipboard": "^5.0.2",
+      "react-dom": "^16.14.0",
+      "react-scripts": "4.0.3",
+      "semantic-ui-css": "^2.4.1",
+      "semantic-ui-react": "^2.0.3"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.14.3",
+      "babel-preset-env": "^1.7.0",
+      "eslint": "^7.20.0",
+      "eslint-config-react-app": "^6.0.0",
+      "eslint-config-semistandard": "^15.0.1",
+      "eslint-config-standard": "^16.0.2",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-only-warn": "^1.0.2",
+      "eslint-plugin-promise": "^4.3.1",
+      "eslint-plugin-standard": "^5.0.0",
+      "gh-pages": "^3.1.0",
+      "react-app-rewired": "^2.1.8",
+      "semistandard": "^16.0.0"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "standard"
+      ],
+      "plugins": [
+        "only-warn"
+      ]
+    },
+    "engines": {
+      "node": ">=12",
+      "npm": ">=6"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "homepage": "https://substrate-developer-hub.github.io/substrate-front-end-template",
+    "bugs": {
+      "url": "https://github.com/substrate-developer-hub/substrate-front-end-template/issues"
+    },
+    "keywords": [
+      "substrate",
+      "substrate-ui",
+      "polkadot-js"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 127
+  Command: sh
+  Arguments: -c react-app-rewired start
+  Directory: /Users/trendlab-1/Desktop/kitties/frontend
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (node:events:365:28)
+      at maybeClose (node:internal/child_process:1067:16)
+      at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)
